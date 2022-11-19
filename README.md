@@ -6,7 +6,7 @@
 
 A super simple web app that utilizes the [Eisenhower method](https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method) of time management and task prioritization. UI inspired from [this article](https://todoist.com/productivity-methods/eisenhower-matrix). Written in HTML, CSS, and vanilla JavaScript with zero dependencies.
 
-**Note:** *This web app was written in the span of less than 30 mins because I was bored, so no local storage or any of that fancy stuff.*
+~~**Note:** *This web app was written in the span of less than 30 mins because I was bored, so no local storage or any of that fancy stuff.*~~
 
 ![Screenshot](screenshot.png)
 
