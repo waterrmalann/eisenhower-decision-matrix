@@ -1,3 +1,22 @@
+:root {
+	--bgclr: #fff;
+	--clr: #212427;
+	--inner-clr: #212427;
+	--title-bgclr: rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bgclr: #38383a;
+		--clr: #fff;
+		--inner-clr: #212427;
+		--title-bgclr: #fff;
+	}
+	html {
+		color-scheme: dark light;
+	}
+}
+
 *,
 *::before,
 *::after {
@@ -6,6 +25,8 @@
 
 body {
 	font-family: "Poppins", sans-serif;
+	color: var(--clr);
+	background: var(--bgclr);
 }
 
 header {
@@ -34,6 +55,7 @@ footer {
 	border-top-left-radius: 0.25rem;
 	border-bottom-right-radius: 0.25rem;
 	position: relative;
+	color: var(--inner-clr);
 }
 
 .card__input {
@@ -42,6 +64,7 @@ footer {
 }
 
 .card__field {
+	color: inherit;
 	border: none;
 	outline: none;
 	border-bottom: 2px solid gray;
@@ -72,7 +95,7 @@ footer {
 	content:'Important, Urgent';
 	position: absolute;
 	top:-5px;
-	background: rgba(0, 0, 0, 0.1);
+	background: var(--title-bgclr);
 	border-radius: 1rem;
 	padding-inline: 1rem;
 }
@@ -83,7 +106,7 @@ footer {
 	content:'Important, Not Urgent';
 	position: absolute;
 	top:-5px;
-	background: rgba(0, 0, 0, 0.1);
+	background: var(--title-bgclr);
 	border-radius: 1rem;
 	padding-inline: 1rem;
 }
@@ -94,7 +117,7 @@ footer {
 	content:'Not Important, Urgent';
 	position: absolute;
 	top:-5px;
-	background: rgba(0, 0, 0, 0.1);
+	background: var(--title-bgclr);
 	border-radius: 1rem;
 	padding-inline: 1rem;
 }
@@ -105,7 +128,7 @@ footer {
 	content:'Not Important, Not Urgent';
 	position: absolute;
 	top:-5px;
-	background: rgba(0, 0, 0, 0.1);
+	background: var(--title-bgclr);
 	border-radius: 1rem;
 	padding-inline: 1rem;
 }
